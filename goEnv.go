@@ -12,5 +12,6 @@ func main() {
 	fmt.Println("number of cpu ", runtime.NumCPU())
 	fmt.Println("number of goroutines ", runtime.NumGoroutine())
 	fmt.Println("the operating system is ", runtime.GOOS)
-
+	//get the assembly language by running command
+	//$ GOOS=windows GORACH=amd64 go tool compile -S goEnv.go
 }
