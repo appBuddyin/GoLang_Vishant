@@ -35,5 +35,10 @@ func main() {
 		i++
 
 	}
-	fmt.Print()
+	fmt.Println()
+
+	anArray := [5]int{0, -2, 1, 3, -1}
+	for index, value := range anArray {
+		fmt.Println("index: ", index, "value: ", value)
+	}
 }
