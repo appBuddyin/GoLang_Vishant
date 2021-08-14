@@ -23,11 +23,10 @@ func main() {
 	}
 	for _, v := range threeD {
 		for _, m := range v {
-		for _, s := range m {
-		fmt.Print(s, " ")
-		}
+			for _, s := range m {
+				fmt.Print(s, " ")
+			}
 		}
 		fmt.Println()
-		}
-	   }
+	}
 }
