@@ -3,10 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	var s1 = []int{2, 5, 6, 7, 8}
+	q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(q)
 
-	s2 := []int{3, 5, 1, 2, 8}
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println(r)
 
-	fmt.Println("s1:", s1)
-	fmt.Println("s2:", s2)
+	s := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println(s)
 }

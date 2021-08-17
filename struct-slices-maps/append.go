@@ -3,15 +3,24 @@ package main
 import "fmt"
 
 func main() {
+	var s []int
+	printSlice(s)
 
-	vals := make([]int, 3)
+	s = append(s, 0)
+	printSlice(s)
 
-	fmt.Printf("slice: %v; len: %d; cap: %d \n", vals, len(vals), cap(vals))
+	s = append(s, 1)
+	printSlice(s)
 
-	vals = append(vals, 1)
-	vals = append(vals, 2)
-	vals = append(vals, 3)
-	vals = append(vals, 4, 5, 6)
+	s = append(s, 2, 3, 4)
+	printSlice(s)
+}
 
-	fmt.Printf("slice: %v; len: %d; cap: %d \n", vals, len(vals), cap(vals))
+func printSlice(s []int) {
+	fmt.Printf(
+		"len=%d cap=%d %v\n",
+		len(s),
+		cap(s),
+		s,
+	)
 }

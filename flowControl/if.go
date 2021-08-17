@@ -2,13 +2,16 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
-func main() {
-	num := 10
-	if num%2 == 0 { //checks if number is even
-		fmt.Println("The number", num, "is even")
-		return
+func sqrt(x float64) string {
+	if x < 0 {
+		return sqrt(-x) + "i"
 	}
-	fmt.Println("The number", num, "is odd")
+	return fmt.Sprint(math.Sqrt(x))
+}
+
+func main() {
+	fmt.Println(sqrt(2), sqrt(-4))
 }

@@ -3,19 +3,19 @@ package main
 import "fmt"
 
 func main() {
+	s := []int{2, 3, 5, 7, 11, 13}
+	printSlice(s)
 
-	vals := make([]int, 5, 10)
+	s = s[:0]
+	printSlice(s)
 
-	n := len(vals)
-	c := cap(vals)
+	s = s[:4]
+	printSlice(s)
 
-	fmt.Printf("The size is: %d\n", n)
-	fmt.Printf("The capacity is: %d\n", c)
+	s = s[2:]
+	printSlice(s)
+}
 
-	vals2 := vals[0:4]
-	n2 := len(vals2)
-	c2 := cap(vals2)
-
-	fmt.Printf("The size is: %d\n", n2)
-	fmt.Printf("The capacity is: %d\n", c2)
+func printSlice(x []int) {
+	fmt.Printf("len=%d, cap=%d, %v\n", len(x), cap(x), x)
 }
