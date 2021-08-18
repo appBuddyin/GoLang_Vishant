@@ -1,11 +1,11 @@
-package flowControl
+package ifElseCondition
 
 import (
 	"fmt"
 	"math"
 )
 
-func pow(x, n, lim float64) float64 {
+func Pow(x, n, lim float64) float64 {
 	if v := math.Pow(x, n); v < lim {
 		return v
 	} else {
@@ -14,9 +14,9 @@ func pow(x, n, lim float64) float64 {
 	return lim
 }
 
-func main() {
+func IfElses() {
 	fmt.Println(
-		pow(3, 2, 10),
-		pow(3, 3, 10),
+		Pow(3, 2, 10),
+		Pow(3, 3, 10),
 	)
 }

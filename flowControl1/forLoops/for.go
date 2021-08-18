@@ -1,4 +1,4 @@
-package flowControl
+package forLoops
 
 import "fmt"
 

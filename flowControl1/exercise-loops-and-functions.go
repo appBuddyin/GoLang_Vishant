@@ -1,4 +1,4 @@
-package flowControl
+package flowControl1
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ func Sqrt(x float64) float64 {
 	return z
 }
 
-func main() {
+func LoopNfunction() {
 	result1 := Sqrt(10)
 	result2 := math.Sqrt(10)
 

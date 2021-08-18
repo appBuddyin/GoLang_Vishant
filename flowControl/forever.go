@@ -1,4 +1,4 @@
-package main
+package flowControl
 
 func main() {
 	for {

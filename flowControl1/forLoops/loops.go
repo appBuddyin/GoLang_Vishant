@@ -1,8 +1,8 @@
-package flowControl
+package forLoops
 
 import "fmt"
 
-func main() {
+func Loops() {
 	//1st style
 	for i := 0; i < 100; i++ {
 		if i%30 == 0 {
