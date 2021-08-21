@@ -1,11 +1,11 @@
-package main
+package flowControl1
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func Greeting() {
 	t := time.Now()
 	switch {
 	case t.Hour() < 12:

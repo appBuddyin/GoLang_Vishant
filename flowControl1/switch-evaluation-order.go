@@ -1,11 +1,11 @@
-package main
+package flowControl1
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func Week() {
 	fmt.Println("When's Saturday?")
 	today := time.Now().Weekday()
 	switch time.Saturday {

@@ -1,8 +1,8 @@
-package main
+package flowControl1
 
 import "fmt"
 
-func main() {
+func Defering() {
 	defer fmt.Println("preula")
 
 	fmt.Println("eita")

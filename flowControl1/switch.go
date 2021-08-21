@@ -1,11 +1,11 @@
-package main
+package flowControl1
 
 import (
 	"fmt"
 	"runtime"
 )
 
-func main() {
+func Switch() {
 	fmt.Print("Go runs on ")
 	switch os := runtime.GOOS; os {
 	case "darwin":
