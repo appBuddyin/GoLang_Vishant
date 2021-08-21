@@ -43,7 +43,7 @@ func processStack(e string) (float64, error) {
 	result := 0.0
 	c := strings.Split(e, "")
 	if len(c)-1 < 2 {
-		return 0.0, errors.New("plz give some args and put space after every token")
+		return 0.0, errors.New("plz give some args and don't put space after tokens")
 	}
 	num1, num2, err := parseArgs(c)
 	if err != nil {
